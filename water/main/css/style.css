@@ -1,13 +1,19 @@
-body {
-    background :linear-gradient(
-        rgba(0, 0, 0, 0.55), 
-        rgba(0, 0, 0, 0.55)
-      ), url(../images/rain.jpg);
+#body {
+   background :url(../images/rain.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #f1f1f1; 
+}
+.body-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #1c1f1d;
+    opacity: .5;
 }
 img {
     max-width: 100%;
