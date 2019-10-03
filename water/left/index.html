@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="body">
+        <div class="body-overlay"></div>
     <header>
         <div class="top-header">
             <div class="container">
@@ -332,6 +334,7 @@
             </div>
         </div>
     </footer>
+    </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.min.js"></script>
@@ -340,12 +343,12 @@
     <script>
         $(document).ready(function() {
             try {
-                $('body').ripples({
+                $('#body').ripples({
                     resolution: 512,
                     dropRadius: 20, //px
                     perturbance: 0.04,
                 });
-                $('body').ripples({
+                $('#body').ripples({
                     resolution: 512,
                     dropRadius: 20, //px
                     perturbance: 0.4,
@@ -353,14 +356,14 @@
                 });
             }
             catch (e) {
-                $('body').show().text(e);
+                $('#body').show().text(e);
             }
         
             
         
             // Automatic drops
             setInterval(function() {
-                var $el = $('body');
+                var $el = $('#body');
                 var x = Math.random() * $el.outerWidth();
                 var y = Math.random() * $el.outerHeight();
                 var dropRadius = 20;
