@@ -11,14 +11,58 @@
            max-width: 100%;
            border-radius: 4px;
        }
+       a:hover {
+         text-decoration: none;
+       }
        header {
            height: 90px;
-           background: grey;
+           background: #63CCCA;
+       }
+       header h1 {
+           color: #524b4b;
+           padding-top: 16px;
        }
        .block {
            margin-top: 40px;
            padding: 20px;
            box-shadow: 0 0 5px 3px grey;
+           position: relative;
+           border-radius: 5px;
+           z-index: 9999;
+       }
+
+      .block:hover .block-overlay {
+           position: absolute;
+           top: 0;
+           left: 0;
+           bottom: 0;
+           right: 0;
+           background: #63ccca9e;
+           display: block;
+       }
+       .block-overlay {
+          display: none; 
+       }
+       .block-overlay h2 {
+        color: #f1f1f1 !important;
+        text-transform: uppercase;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        font-size: 22px;
+        box-shadow: 0 0 5px 0px;
+        border-radius: 4px;
+        background: #04040480;
+        transform: translate(-50%, -50%);
+        padding: 5px 12px 8px 12px !important;
+       }
+       .block h2 {
+           padding-bottom: 27px;
+           color: #524b4b;
+       }
+       .block h2 span {
+           padding-bottom: 7px;
+           border-bottom: 3px solid #7f7c7c;
        }
     </style>
 </head>
@@ -28,51 +72,75 @@
     </header>
     <div class="body">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-center">
+            <div class="row text-center">
+                <div class="col-md-4">
                     <div class="block">
-                        <a href="water/main/index.html">
-                         <h2>Water Default</h2>
+                            <a href="water/main/index.html" target="_blank">
+                        <div class="block-overlay">
+                            <h2>See More</h2>
+                        </div>
+                        <a href="water/main/index.html" target="_blank">
+                         <h2><span>Water Default</span></h2>
                          <img src="images/watermain.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="block">
-                        <a href="water/left/index.html">
-                         <h2>Water Left</h2>
+                            <a href="water/left/index.html" target="_blank">
+                        <div class="block-overlay">
+                            <h2>See More</h2>
+                        </div>
+                       
+                         <h2><span>Water Left</span></h2>
                          <img src="images/waterleft.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="block">
-                        <a href="water/right/index.html">
-                         <h2>Water Right</h2>
+                            <a href="water/right/index.html" target="_blank">
+                        <div class="block-overlay">
+                            <h2>See More</h2>
+                        </div>
+                        
+                         <h2><span>Water Right</span></h2>
                          <img src="images/waterright.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="block">
-                        <a href="white/main/index.html">
-                         <h2>White Default</h2>
+                            <a href="white/main/index.html" target="_blank">
+                        <div class="block-overlay">
+                            <h2>See More</h2>
+                        </div>
+                        
+                         <h2><span>White Default</span></h2>
                          <img src="images/whitemain.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="block">
-                        <a href="white/left/index.html">
-                         <h2>White Left</h2>
+                            <a href="white/left/index.html" target="_blank">
+                        <div class="block-overlay">
+                            <h2>See More</h2>
+                        </div>
+                       
+                         <h2><span>White Left</span></h2>
                          <img src="images/whiteleft.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="block">
-                        <a href="white/right/index.html">
-                         <h2>White Right</h2>
+                            <a href="white/right/index.html" target="_blank">
+                        <div class="block-overlay">
+                            <h2>See More</h2>
+                        </div>
+                        
+                         <h2><span>White Right</span></h2>
                          <img src="images/whiteright.png" alt="">
                         </a>
                     </div>
