@@ -136,6 +136,9 @@ h4 {
     font-size: 20px;
     text-transform: uppercase;
 }
+.ext-margin {
+    padding-top: 13%;
+}
 .company-history {
     padding: 40px 10px 30px 10px;
     border-bottom: 4px solid #6d6d6d75;
@@ -197,4 +200,18 @@ footer {
 }
 .footer p {
     margin-bottom: 0 !important;
+}
+
+/* ==== Acquapanna ==== */
+.cart-table {
+    padding: 50px 0;
+}
+.cart-table .table thead th, .product-details .table thead th {
+    border: 0 !important;
+}
+.cart-table .table td, .cart-table .table th, .product-details .table td, .product-details .table th {
+    border: 0 !important;
+}
+.cart-p {
+    padding-left: 9%;
 }
