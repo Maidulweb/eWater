@@ -203,8 +203,12 @@ footer {
 }
 
 /* ==== Acquapanna ==== */
+.flag img {
+    padding-top: 0 !important;
+}
 .cart-table {
-    padding: 50px 0;
+    padding: 20px 0;
+    border-bottom: 4px solid #6d6d6d75;
 }
 .cart-table .table thead th, .product-details .table thead th {
     border: 0 !important;
@@ -214,4 +218,26 @@ footer {
 }
 .cart-p {
     padding-left: 9%;
+}
+.orgine h4 {
+    padding: 20px 0;
+    
+}
+
+/* ==== PROUCTS COUNTRY ==== */
+.country-border {
+    border: 0 !important;
+}
+.country-border h4 {
+    text-transform: uppercase;
+}
+.country-border p {
+    padding-top: 0 !important;
+}
+.products-country h4 {
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.products-country img {
+    margin-top: 20px;
 }

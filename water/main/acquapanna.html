@@ -160,11 +160,11 @@
                                       <h2>Select By Product</h2>
                                       <select class="custom-select">
                                             <option>choose product ...</option>
-                                            <option value="index.html">MINERAL WATERS</option>
-                                            <option value="index.html">Acqua Panna</option> 
-                                            <option value="index.html">Antipodes</option>
-                                            <option value="ararimu.php">Ararimu Valley</option>
-                                            <option value="badoit.php">Badoit</option>
+                                            <option value="mineralwater.html">MINERAL WATERS</option>
+                                            <option value="mineralwater.html">Acqua Panna</option> 
+                                            <option value="mineralwater.html">Antipodes</option>
+                                            <option value="mineralwater.html">Ararimu Valley</option>
+                                            <option value="mineralwater.html">Badoit</option>
                                             <option value="deepOrigin.php">Deep Origin</option>
                                             <option value="ecowai.php">EcoWai</option>
                                             <option value="evian.php">Evian</option>
@@ -194,14 +194,14 @@
                                         <h2>Select By Country</h2>
                                         <select class="custom-select">
                                                 <option selected="selected">choose country ...</option>
-                                                <option value="fiji.php">Fiji</option>
-                                                <option value="czechRepublic.php">Czech Republic</option>
-                                                <option value="france.php">France</option>
-                                                <option value="germany.php">Germany</option>
-                                                <option value="italy.php">Italy</option>
-                                                <option value="nz.php">New Zealand</option>
-                                                <option value="uludag.php">Turkey</option>
-                                                <option value="spain.php">Spain</option>
+                                                <option value="fiji.html">Fiji</option>
+                                                <option value="fiji.html">Czech Republic</option>
+                                                <option value="fiji.html">France</option>
+                                                <option value="fiji.html">Germany</option>
+                                                <option value="fiji.html">Italy</option>
+                                                <option value="fiji.html">New Zealand</option>
+                                                <option value="fiji.html">Turkey</option>
+                                                <option value="fiji.html">Spain</option>
                                         </select>
                                 </div>
                              </div>
@@ -319,14 +319,10 @@
                                     <p>If you enjoyed this water you may like to try more of our range with similar styles from the selection below.</p>
                                   </div>
                                 </div>
-                                <div class="orgine">
+                                <div class="orgine text-center">
                                   <h4>Origin of Source</h4>
-                                  <img src="images/7913-Inflation-States.png" alt="">
+                                  <img src="images/australia_map_states.gif" alt="">
                                 </div>
-                        </div>
-                        <div class="slogan">
-                            <p>Remember, life is too short not to enjoy fine water. Celebrate Life!</p>
-                            <p>Cheers, the team at aquadeli</p>
                         </div>
                     </div><!-- middle-body -->
                 </div>
@@ -456,5 +452,10 @@
             }, 500);
         });
         </script> 
+        <script>
+            $("#water-select").change(function() {
+             document.location.href = $(this).val();
+            });
+          </script>
 </body>
 </html>
